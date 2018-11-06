@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    },
+    "editor.formatOnSave": true,
+    "css.lint.unknownProperties": "ignore"
+}

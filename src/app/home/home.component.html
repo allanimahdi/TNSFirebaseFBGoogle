@@ -1,0 +1,12 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Home"></Label>
+</ActionBar>
+
+<StackLayout class="page">
+    <!-- Add your page content here -->
+    <Button (tap)="logout()" text="logout"></Button>
+
+    <Image *ngIf="user" src="{{user.profileImageURL}}" stretch="none" horizontalAlignment="center"></Image>
+    <Label *ngIf="user" [text]="user.name"></Label>
+    <Label *ngIf="user" [text]="user.email"></Label>
+</StackLayout>

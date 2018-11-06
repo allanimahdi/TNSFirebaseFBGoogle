@@ -1,0 +1,9 @@
+<StackLayout class=".c-bg-white">
+
+
+    <Image src="res://icon" stretch="none" horizontalAlignment="center"></Image>
+
+
+    <Button [isEnabled]="!(isLoading | async)" text="Sign in With Facebook" (tap)="login_fb()"></Button>
+    <Button [isEnabled]="!(isLoading | async)" text="Sign in With Google" (tap)="login_google()"></Button>
+</StackLayout>
